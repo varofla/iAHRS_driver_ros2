@@ -79,7 +79,6 @@ class IahrsDriver(Node):
             if sync_data and len(sync_data.split("=")) == 1:
                 sync_data_splitted = sync_data.split(",")
                 if len(sync_data_splitted) == 9:
-                    print("asdf")
                     self._new_data_flag = True
                     sync_data_splitted = list(
                         map(lambda x: float(x), sync_data_splitted)
